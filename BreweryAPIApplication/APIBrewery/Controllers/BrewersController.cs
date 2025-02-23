@@ -23,6 +23,13 @@ namespace BreweryAPI.Controllers
             return Ok(beers);
         }
 
+        [HttpGet("/beers/{beerId}")]
+        public async Task<ActionResult<List<Beer>>> GetBeerById(int beerId)
+        {
+            var beer = await _brewerData.GetBeerById(beerId);
+            return Ok(beer);
+        }
+
         [HttpGet("/brewers")]
         public async Task<ActionResult<List<Brewer>>> GetAllBrewers()
         {

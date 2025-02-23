@@ -74,6 +74,7 @@
     <Build Include="StoredProcedures\spBeers_GetAll.sql" />
     <Build Include="StoredProcedures\spBrewers_GetAll.sql" />
     <Build Include="StoredProcedures\spWholesalers_GetAll.sql" />
+    <Build Include="StoredProcedures\spBeers_GetBeerById.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="BreweryDatabase.refactorlog" />

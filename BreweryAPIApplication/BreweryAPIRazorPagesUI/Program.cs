@@ -14,6 +14,8 @@ builder.Services.AddScoped<IBrewerData, BrewerData>();
 builder.Services.AddScoped<IWholesalerData, WholesalerData>();
 
 builder.Services.AddRazorPages();
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(); // This will log to the console
 
 var app = builder.Build();
 
@@ -29,4 +31,5 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
 app.Run();

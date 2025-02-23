@@ -1,8 +1,7 @@
 using BreweryAPIClassLibrary.DataAccess;
 using BreweryAPIClassLibrary.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+
 
 public class BeersModel : PageModel
 {

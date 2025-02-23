@@ -1,4 +1,5 @@
 ﻿using BreweryAPIClassLibrary.Models;
+using System.Data;
 
 
 namespace BreweryAPIClassLibrary.DataAccess
@@ -24,6 +25,11 @@ namespace BreweryAPIClassLibrary.DataAccess
         public async Task<List<Beer>> GetBeersByBrewer(int brewerId)
         {
             return await _db.LoadData<Beer, dynamic>("spBeers_GetByBrewer", new { BrewerId = brewerId }, "Default");
+        }
+
+        public async Task<Beer> GetBeerById(int beerId)
+        {
+            return await _db.GetDataById<Beer>("spBeers_GetBeerById", new { BeerId = beerId }, "Default");
         }
 
         public async Task AddBeer(Beer beer)

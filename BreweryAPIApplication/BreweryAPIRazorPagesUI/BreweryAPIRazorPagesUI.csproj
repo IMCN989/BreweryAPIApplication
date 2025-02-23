@@ -11,4 +11,10 @@
     <ProjectReference Include="..\BreweryAPIClassLibrary\BreweryAPIClassLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Beers\" />
+    <Folder Include="Pages\Brewers\" />
+    <Folder Include="Pages\Wholesalers\" />
+  </ItemGroup>
+
 </Project>
