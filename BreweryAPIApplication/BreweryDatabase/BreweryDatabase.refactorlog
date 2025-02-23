@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="2c2ef7ad-53e5-4400-833a-2dd7fd1fc5a3" ChangeDateTime="02/16/2025 16:26:25">
+    <Property Name="ElementName" Value="[dbo].[Beers].[Task]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Beers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4b08ef9e-d305-467c-a922-66c016b7330a" ChangeDateTime="02/16/2025 16:26:54">
+    <Property Name="ElementName" Value="[dbo].[Beers].[AssignedTo]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Beers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Price" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4a34593b-b0a6-4a9f-9f7f-dae49bf3a741" ChangeDateTime="02/16/2025 16:27:33">
+    <Property Name="ElementName" Value="[dbo].[Beers].[IsComplete]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Beers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BrewerID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3bdf86c2-b81b-41db-93d1-8d6ab6aa6467" ChangeDateTime="02/16/2025 16:32:47">
+    <Property Name="ElementName" Value="[dbo].[Beers].[BrewerID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Beers]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BrewerId" />
+  </Operation>
+</Operations>

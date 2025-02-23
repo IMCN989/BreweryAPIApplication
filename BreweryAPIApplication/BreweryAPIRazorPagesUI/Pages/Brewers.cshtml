@@ -1,0 +1,16 @@
+﻿@page
+@model BrewersModel
+@{
+    ViewData["Title"] = "Brewers List";
+}
+
+<h1>Brewers List</h1>
+
+<ul>
+    @foreach (var brewer in Model.Brewers)
+    {
+        <li>@brewer.Name</li>
+    }
+</ul>
+
+<a asp-page="Index">Back to Home</a>

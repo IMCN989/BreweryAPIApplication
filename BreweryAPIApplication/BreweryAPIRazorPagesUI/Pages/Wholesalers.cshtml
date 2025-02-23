@@ -1,0 +1,16 @@
+﻿@page
+@model WholesalersModel
+@{
+    ViewData["Title"] = "Wholesalers List";
+}
+
+<h1>Wholesalers List</h1>
+
+<ul>
+    @foreach (var wholesaler in Model.Wholesalers)
+    {
+        <li>@wholesaler.Name</li>
+    }
+</ul>
+
+<a asp-page="Index">Back to Home</a>

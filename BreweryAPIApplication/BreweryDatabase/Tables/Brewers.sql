@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Brewers]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] NCHAR(100) NOT NULL,
+)

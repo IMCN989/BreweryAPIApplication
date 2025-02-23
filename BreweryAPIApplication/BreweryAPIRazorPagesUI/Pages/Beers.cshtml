@@ -1,0 +1,32 @@
+﻿@page
+@model BeersModel
+@{
+    ViewData["Title"] = "Beers List";
+}
+
+
+
+<h2>Beers</h2>
+<a asp-page="Create" class="btn btn-primary">Add New Beer</a>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Brewer ID</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var beer in Model.Beers)
+    {
+        <tr>
+            <td>@beer.Name</td>
+            <td>@beer.Price</td>
+            <td>@beer.BrewerId</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@beer.Id" class="btn btn-warning">Edit</a>
+                <a asp-page="Delete" asp-route-id="@beer.Id" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+<a asp-page="Index">Back to Home</a>
