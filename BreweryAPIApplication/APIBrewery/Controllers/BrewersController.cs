@@ -5,7 +5,7 @@ using BreweryAPIClassLibrary.DataAccess;
 
 namespace BreweryAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class BrewersController : ControllerBase
     {
@@ -14,6 +14,20 @@ namespace BreweryAPI.Controllers
         public BrewersController(IBrewerData brewerData)
         {
             _brewerData = brewerData;
+        }
+
+        [HttpGet("/beers")]
+        public async Task<ActionResult<List<Beer>>> GetAllBeers()
+        {
+            var beers = await _brewerData.GetAllBeers();
+            return Ok(beers);
+        }
+
+        [HttpGet("/brewers")]
+        public async Task<ActionResult<List<Brewer>>> GetAllBrewers()
+        {
+            var brewers = await _brewerData.GetAllBrewers();
+            return Ok(brewers);
         }
 
         [HttpGet("{brewerId}/beers")]

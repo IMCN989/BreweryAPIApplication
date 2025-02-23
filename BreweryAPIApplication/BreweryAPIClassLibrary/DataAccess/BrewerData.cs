@@ -28,7 +28,8 @@ namespace BreweryAPIClassLibrary.DataAccess
 
         public async Task AddBeer(Beer beer)
         {
-            await _db.SaveData("spBeers_Insert", beer, "Default");
+            await _db.SaveData("spBeers_Insert", new { beer.Name, beer.Price, beer.BrewerId }, "Default");
+
         }
 
         public async Task DeleteBeer(int beerId)
