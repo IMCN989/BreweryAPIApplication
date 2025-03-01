@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIBrewery", "APIBrewery\AP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreweryAPIRazorPagesUI", "BreweryAPIRazorPagesUI\BreweryAPIRazorPagesUI.csproj", "{13B67D95-58C7-4518-9028-87BF5E92F66A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreweryAPIConsoleApp", "BreweryAPIConsoleApp\BreweryAPIConsoleApp.csproj", "{D88D682F-4906-4A94-A09F-F3D29D5FB2E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreweryAPI.Tests", "BreweryAPI.Tests\BreweryAPI.Tests.csproj", "{1806003B-61DE-4BF3-889E-0A7B44376495}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{13B67D95-58C7-4518-9028-87BF5E92F66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13B67D95-58C7-4518-9028-87BF5E92F66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13B67D95-58C7-4518-9028-87BF5E92F66A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88D682F-4906-4A94-A09F-F3D29D5FB2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88D682F-4906-4A94-A09F-F3D29D5FB2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88D682F-4906-4A94-A09F-F3D29D5FB2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88D682F-4906-4A94-A09F-F3D29D5FB2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1806003B-61DE-4BF3-889E-0A7B44376495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1806003B-61DE-4BF3-889E-0A7B44376495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1806003B-61DE-4BF3-889E-0A7B44376495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1806003B-61DE-4BF3-889E-0A7B44376495}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
