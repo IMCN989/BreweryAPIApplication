@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "2e338907-ad1a-44f4-ae06-35f3cb5a5d99",
+		"name": "BreweryAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29635046",
+		"_collection_link": "https://brewery-api-team.postman.co/workspace/Brewery-API-Team-Workspace~4ad1c343-773a-4f68-9dc2-c328f7a6801e/collection/29635046-2e338907-ad1a-44f4-ae06-35f3cb5a5d99?action=share&source=collection_link&creator=29635046"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7048/beers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7048/beers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"beers"
+					]
+				},
+				"description": "Get All Beers"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/beers/7",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7048/beers/7",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"beers",
+						"7"
+					]
+				},
+				"description": "Get beers by BeerID"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/brewers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7048/brewers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"brewers"
+					]
+				},
+				"description": "GET a list of brewers"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/Brewers/1/beers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7048/Brewers/1/beers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"Brewers",
+						"1",
+						"beers"
+					]
+				},
+				"description": "Get a list of beers by Brewer Id"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/Brewers/addBeer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"name\": \"test add a beer ian is a test\",\r\n  \"price\": 20,\r\n  \"brewerId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7048/Brewers/addBeer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"Brewers",
+						"addBeer"
+					]
+				},
+				"description": "Test add a abeer\r\n{\r\n  \"name\": \"string\",\r\n  \"price\": 0,\r\n  \"brewerId\": 0\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/Brewers/deleteBeer/7",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7048/Brewers/deleteBeer/7",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"Brewers",
+						"deleteBeer",
+						"7"
+					]
+				},
+				"description": "Delete Beer with known Beer ID"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/Brewers/updateBeer/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 42,\r\n  \"name\": \"test update\",\r\n  \"price\": 200,\r\n  \"brewerId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7048/Brewers/updateBeer/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"Brewers",
+						"updateBeer",
+						""
+					]
+				},
+				"description": "Update Beer with known beer ID and Brewery ID\r\n{\r\n  \"id\": 42,\r\n  \"name\": \"test update\",\r\n  \"price\": 200,\r\n  \"brewerId\": 1\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/Brewers/updateBeer/ Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 42,\r\n  \"name\": \"test update\",\r\n  \"price\": 200,\r\n  \"brewerId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7048/Brewers/updateBeer/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"Brewers",
+						"updateBeer",
+						""
+					]
+				},
+				"description": "Update Beer with known beer ID and Brewery ID\r\n{\r\n  \"id\": 42,\r\n  \"name\": \"test update\",\r\n  \"price\": 200,\r\n  \"brewerId\": 1\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/api/Wholesalers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7048/api/Wholesalers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"api",
+						"Wholesalers"
+					]
+				},
+				"description": "Get a list of all Wholesalers"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/Wholesalers/2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7048/Wholesalers/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"Wholesalers",
+						"2"
+					]
+				},
+				"description": "Get a lits of Wholesalers by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/api/Wholesalers/2/add-beer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"beerId\": 43,\r\n  \"stock\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7048/api/Wholesalers/2/add-beer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"api",
+						"Wholesalers",
+						"2",
+						"add-beer"
+					]
+				},
+				"description": "Add beer stock to known wholsesaler ID\r\n\r\n{\r\n  \"beerId\": 43,\r\n  \"stock\": 10\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/api/Wholesalers/quote",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"wholesalerId\": 2,\r\n  \"items\": [\r\n    {\r\n      \"beerId\": 7,\r\n      \"quantity\": 10\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7048/api/Wholesalers/quote",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"api",
+						"Wholesalers",
+						"quote"
+					]
+				},
+				"description": "Ask for quote known wholesaler and beerI\r\n{\r\n  \"wholesalerId\": 2,\r\n  \"items\": [\r\n    {\r\n      \"beerId\": 7,\r\n      \"quantity\": 10\r\n    }\r\n  ]\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7048/api/Wholesalers/sell",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"wholesalerId\": 2,\r\n  \"beerId\": 43,\r\n  \"quantity\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7048/api/Wholesalers/sell",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7048",
+					"path": [
+						"api",
+						"Wholesalers",
+						"sell"
+					]
+				},
+				"description": "Sell knowing wholesaler and beer ID\r\n\r\n{\r\n  \"wholesalerId\": 2,\r\n  \"beerId\": 43,\r\n  \"quantity\": 10\r\n}"
+			},
+			"response": []
+		}
+	]
+}
